@@ -46,6 +46,8 @@ nav{display:flex;align-items:center;justify-content:space-between;height:60px}
 /* hero */
 .hero{padding:88px 0 64px}
 .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.intro{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:3px solid var(--surface);box-shadow:0 0 0 3px var(--accent),var(--shadow);flex:none}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);background:var(--accent-soft);padding:6px 12px;border-radius:999px;font-weight:500}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 60%,transparent)}70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
@@ -152,6 +154,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   section{padding:48px 0}
   .term{font-size:12px}
   .lead{font-size:16px}
+  .avatar{width:88px;height:88px}
 }
 </style>
 </head>
@@ -181,7 +184,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow"><span class="dot"></span>Open to DevOps / Cloud Engineer roles</span>
+        <div class="intro">
+          <img class="avatar" src="photo.jpg" alt="Abubaker Sithik Rahuman M" width="112" height="112">
+          <span class="eyebrow"><span class="dot"></span>Open to DevOps / Cloud Engineer roles</span>
+        </div>
         <h1>Hi, I'm Abubaker.<br><span class="grad">I automate the cloud.</span></h1>
         <p class="lead">DevOps engineer who keeps cloud environments running, deployments automated and Kubernetes workloads healthy on AWS.</p>
         <div class="meta">
